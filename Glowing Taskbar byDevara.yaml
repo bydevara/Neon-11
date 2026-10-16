@@ -1,0 +1,265 @@
+theme: Glowing Taskbar byDevara
+styleConstants:
+  - Background1=<WindhawkBlur BlurAmount="15" TintColor="#0F000000" TintOpacity="0.4" />
+  - Background2=<WindhawkBlur BlurAmount="11" TintColor="#25323232"/>
+  - Background3=<WindhawkBlur BlurAmount="11" TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.2" />
+  - SysBG=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity="1.0" Opacity="0"/>
+  - CR=9
+  - CR2=9
+  - CR3=9
+  - CR4=10
+  - CornerRadiusVolumeBrightnessPopUp=15
+  - CornerRadius=1
+  - BT=2
+  - BorderThicknessGlow=0,2,0,0
+  - BorderBrush=<WindhawkBlur BlurAmount="15" TintColor="#0F000000"/>
+  - GridMargin=-1.5,0,-1.5,0
+  - AnimationSettings=<TransitionCollection><EntranceThemeTransition FromVerticalOffset="210" IsStaggeringEnabled="False" /></TransitionCollection>
+controlStyles:
+  - target: Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid
+    styles:
+      - Margin=$GridMargin
+      - BorderThickness=$BorderThicknessGlow
+      - BorderBrush:=$BorderBrush
+      - CornerRadius=$CornerRadius
+      - Background:=Transparent
+  - target: Taskbar.TaskbarFrame > Grid#RootGrid > Taskbar.TaskbarBackground > Grid > Rectangle#BackgroundFill
+    styles:
+      - Fill:=$Background1
+  - target: Taskbar.TaskbarBackground#HoverFlyoutBackgroundControl > Grid > Rectangle#BackgroundFill
+    styles:
+      - Fill:=Transparent
+  - target: Rectangle#BackgroundStroke
+    styles:
+      - Visibility=1
+  - target: Grid#ConfirmatorMainGrid
+    styles:
+      - Background:=$Background1
+      - BorderThickness=3,3,3,3
+      - BorderBrush:=$BorderBrush
+      - CornerRadius=$CornerRadius
+      - CornerRadius=11
+  - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel
+    styles:
+      - Visibility=0
+      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
+  - target: Taskbar.TaskListLabeledButtonPanel@RunningIndicatorStates > Rectangle#RunningIndicator
+    styles:
+      - RenderTransform:=<TranslateTransform X="0" Y="8.7"/>
+      - Height=7
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel
+    styles:
+      - Opacity=1
+  - target: Image#OverlayIcon
+    styles:
+      - RenderTransform:=<TranslateTransform X="-5" Y="0"/>
+      - Margin=0,0,0,0
+      - Canvas.ZIndex=1
+      - Opacity=0.8
+  - target: Taskbar.Badge#BadgeControl
+    styles:
+      - RenderTransform:=<TranslateTransform X="-3" Y="-3"/>
+      - Margin=0,0,0,0
+  - target: Taskbar.Badge#BadgeControl > Grid > Rectangle
+    styles:
+      - RenderTransform:=<TranslateTransform X="-0.5" Y="0"/>
+      - Fill:=<WindhawkBlur BlurAmount="5" TintColor="#FF3131" TintOpacity="0.5" />
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - CornerRadius=$CR
+  - target: Taskbar.ExperienceToggleButton
+    styles:
+      - CornerRadius=$CR
+  - target: Taskbar.TaskListButton
+    styles:
+      - CornerRadius=$CR
+  - target: SearchUx.SearchUI.SearchButtonRootGrid#SearchBoxButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - CornerRadius=$CR
+  - target: Windows.UI.Xaml.Controls.Border#SearchPillBackgroundElement
+    styles:
+      - CornerRadius=$CR
+  - target: Windows.UI.Xaml.Controls.Border#MultiWindowElement
+    styles:
+      - CornerRadius=$CR
+      - Margin=0,1,0,1
+  - target: SystemTray.SystemTrayFrame
+    styles:
+      - RenderTransform:=<TranslateTransform X="2.5" />
+  - target: SystemTray.ChevronIconView
+    styles:
+      - CornerRadius=$CR4
+      - Margin=0,0,2,0
+  - target: SystemTray.NotifyIconView > Windows.UI.Xaml.Controls.Grid#ContainerGrid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$CR4
+      - Margin=2,2,2,3
+  - target: SystemTray.IconView#SystemTrayIcon > Windows.UI.Xaml.Controls.Grid#ContainerGrid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$CR4
+      - Margin=2,2,2,3
+  - target: SystemTray.OmniButton#ControlCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$CR4
+      - Margin=2,2,2,3
+  - target: SystemTray.OmniButton#NotificationCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$CR4
+      - Margin=2,2,2,3
+  - target: Border#OverflowFlyoutBackgroundBorder
+    styles:
+      - Background:=$Background2
+      - CornerRadius:=$CR2
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Grid#ConfirmatorMainGrid
+    styles:
+      - Background:=$Background2
+      - CornerRadius=$CornerRadiusVolumeBrightnessPopUp
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+      - Shadow:=
+  - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect
+    styles:
+      - Fill:=#10FFFFFF
+  - target: Windows.UI.Xaml.Controls.Grid#HoverFlyoutGrid > Windows.UI.Xaml.Controls.Border#HoverFlyoutBackground
+    styles:
+      - Background:=$Background3
+      - CornerRadius=$CR3
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+      - Shadow:=
+  - target: Taskbar.TaskItemThumbnailView > Grid@CommonStates > Border#BackgroundBorder
+    styles:
+      - Background:=$Background3
+      - BorderThickness@Normal=$BT
+      - BorderBrush@Normal:=$BorderBrush
+      - BorderThickness@PointerOver=$BT
+      - BorderBrush@PointerOver:=$BorderBrush
+      - CornerRadius=$CR3
+  - target: Windows.UI.Xaml.Controls.ContentPresenter#BorderElement
+    styles:
+      - CornerRadius=11
+      - Margin=-1,-1,-1,-1
+  - target: Windows.UI.Xaml.Controls.Grid#ModalRootGrid > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - Background:=$Background1
+      - CornerRadius=$CR
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Grid#ModalRootGrid > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="11" TintColor="#0C000000"/>
+      - 'Transitions:=<TransitionCollection> <ContentThemeTransition VerticalOffset="100" /> </TransitionCollection> '
+      - CornerRadius=20
+  - target: Windows.UI.Xaml.Controls.Border#BackgroundDimmingLayer
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="0" TintColor="#00000000" />
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement#VirtualDesktopBar > Grid > Border
+    styles:
+      - Background:=$Background2
+      - CornerRadius=$CR2
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement#VirtualDesktopBar
+    styles:
+      - MaxWidth:=900
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Grid#MainGrid
+    styles:
+      - CornerRadius=$CR3
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+  - target: Windows.UI.Xaml.Controls.Button#VirtualDesktopElementCloseButton
+    styles:
+      - CornerRadius=$CR
+  - target: Windows.UI.Xaml.Controls.Button#CloseButton
+    styles:
+      - CornerRadius=$CR3
+  - target: Taskbar.AugmentedEntryPointButton#AugmentedEntryPointButton > Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel
+    styles:
+      - Margin=2
+      - Background:=$ElementBG
+      - CornerRadius=12
+  - target: Windows.UI.Xaml.Controls.Border#SnapBarBorder
+    styles:
+      - Background:=$Background2
+      - CornerRadius=$CR3
+      - RenderTransform:=<TranslateTransform X="0" Y="-20" />
+      - Margin=0,0,0,-10
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Border#SnapPickerBorder
+    styles:
+      - Background:=$Background2
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter > Border
+    styles:
+      - Shadow:=
+  - target: MenuFlyoutPresenter
+    styles:
+      - CornerRadius=$CR3
+      - Shadow:=
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - Background:=$Background1
+      - BorderThickness=2,2,2,2
+      - CornerRadius=14
+      - Padding=3,4,3,4
+      - BorderBrush:=$BorderBrush
+      - Margin=13.5,0,0,0
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutItem
+    styles:
+      - CornerRadius=$CR
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutSubItem
+    styles:
+      - CornerRadius=$CR
+  - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
+    styles:
+      - Background:=$Background2
+      - CornerRadius=$CR3
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+      - Shadow:=
+  - target: ScrollViewer#MenuFlyoutPresenterScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > StackPanel
+    styles:
+      - ChildrenTransitions:=$AnimationSettings
+  - target: Grid#LayoutRoot
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Border#BackgroundBorder
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Microsoft.UI.Xaml.Controls.ItemsRepeater#TaskbarFrameRepeater
+    styles:
+      - Margin=0,1,0,0
+  - target: TextBlock#TimeInnerTextBlock
+    styles:
+      - FontFamily=Segoe UI Variable
+      - FontSize=14
+  - target: TextBlock#DateInnerTextBlock
+    styles:
+      - FontFamily=Segoe UI Variable
+      - FontSize=14
+  - target: Grid#SystemTrayFrameGrid
+    styles:
+      - Margin=0
+      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
+      - Padding=0
+      - Background:=$SysBG
+      - CornerRadius=15,0,0,15
+      - BorderThickness=2,2,0,0
+      - BorderBrush:=$BorderBrush
+  - target: Rectangle#ShowDesktopPipe@CommonStates
+    styles:
+      - RenderTransform:=<TranslateTransform X="0.5" Y="0"/>
+      - Width=14
+      - Margin=0
+      - Height=50
+      - Stroke:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.1"/>
+      - StrokeThickness=20
+themeResourceVariables:
+  - ''
+xamlDiagnosticsHandling: alert
