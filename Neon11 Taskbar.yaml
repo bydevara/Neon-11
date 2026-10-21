@@ -1,4 +1,4 @@
-theme: Windows Neon byDevara 0.0.6 (custom tray & fluent media player)
+theme: Neon 11 Taskbar 0.0.8
 styleConstants:
   - Background1=<WindhawkBlur BlurAmount="15" TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.2" />
   - Background2=<WindhawkBlur BlurAmount="11" TintColor="#25323232"/>
@@ -17,102 +17,45 @@ styleConstants:
   - GridMargin=-1.5,0,-1.5,0
   - AnimationSettings=<TransitionCollection><EntranceThemeTransition FromVerticalOffset="210" IsStaggeringEnabled="False" /></TransitionCollection>
 controlStyles:
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[10]
-    styles:
-      - MaxHeight=50
-      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[9]
-    styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="10"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[8]
-    styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="10"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[7]
-    styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="15"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[6]
-    styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="15"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[5]
-    styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="15"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[4]
-    styles:
-      - MinHeight=0
-      - RenderTransform:=<TranslateTransform X="0" Y="15"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[3]
-    styles:
-      - MinHeight=0
-      - RenderTransform:=<TranslateTransform X="0" Y="15"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[2]
-    styles:
-      - MinHeight=0
-      - RenderTransform:=<TranslateTransform X="0" Y="15"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border > Grid#FluentMedia_Visualizer > StackPanel#FluentMedia_VisualizerBars > Rectangle[1]
-    styles:
-      - Margin=0,0,0,0
-      - MinHeight=0
-      - RenderTransform:=<TranslateTransform X="0" Y="15"/>
-  - target: Windows.UI.Xaml.Controls.Grid#FluentMedia_Visualizer
-    styles:
-      - Margin=200,-9,0,0
-      - Visibility=0
-  - target: Windows.UI.Xaml.Controls.Border#FluentMedia_ProgressBarTrack
-    styles:
-      - RenderTransform:=<TranslateTransform X="13" Y="0"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaBar > Grid#FluentMedia_PanelGrid
-    styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaDetachedViz > Grid#FluentMedia_DetachedBackground > Border
-    styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="8"/>
-      - Opacity=0.4
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid > Grid#FluentMediaBar > Grid#FluentMedia_PanelGrid > Grid
-    styles:
-      - Opacity=1
-      - RenderTransform:=<TranslateTransform X="0" Y="0.8"/>
-      - Margin=0,-4,0,-4
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > Grid#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid
-    styles:
-      - Padding=-30,0,0,0
   - target: SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter[1] > SystemTray.IconView > Grid > Grid
     styles:
       - Visibility=0
       - Opacity=1
-      - RenderTransform:=<TransformGroup><TranslateTransform X="27" Y="-12" /><ScaleTransform ScaleX="1.2" ScaleY="1.2" /></TransformGroup>
+      - RenderTransform:=<TransformGroup><TranslateTransform X="27" Y="-14" /><ScaleTransform ScaleX="1.2" ScaleY="1.2" /></TransformGroup>
   - target: SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter[2] > SystemTray.IconView > Grid > Grid
     styles:
       - Visibility=0
       - Opacity=1
-      - RenderTransform:=<TransformGroup><TranslateTransform X="7" Y="6" /><ScaleTransform ScaleX="1.2" ScaleY="1.2" /></TransformGroup>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > Grid#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel
-    styles:
-      - RenderTransform:=<TranslateTransform X="9" Y="0" />
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > Grid#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel > TextBlock#BatteryTextBlock
+      - RenderTransform:=<TransformGroup><TranslateTransform X="5" Y="6" /><ScaleTransform ScaleX="1.2" ScaleY="1.2" /></TransformGroup>
+  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.NotificationAreaIcons#NotificationAreaIcons > ItemsPresenter > StackPanel
     styles:
       - Opacity=1
-      - FontWeight=bold
-      - FontFamily=sf pro
-      - RenderTransform:=<TransformGroup><TranslateTransform X="-12" Y="-10" /><ScaleTransform ScaleX="1.05" ScaleY="1.05" /></TransformGroup>
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > Grid#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel > Grid
-    styles:
-      - Opacity=1
-      - RenderTransform:=<TransformGroup><TranslateTransform X="6" Y="3" /><ScaleTransform ScaleX="1.6" ScaleY="1.6" /></TransformGroup>
-  - target: Canvas > FlyoutPresenter > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ContentPresenter > Grid > Grid > Border > Grid > StackPanel > Border
-    styles:
-      - Opacity=1
-      - CornerRadius=0
-      - BorderThickness=0
-      - BorderBrush=<WindhawkBlur BlurAmount="15" TintColor="#0F000000"/>
-  - target: Canvas > FlyoutPresenter > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ContentPresenter > Grid > Grid > Border > Grid > Grid
-    styles:
-      - Opacity=1
-      - Background:=$BackgroundFluentMedia
-  - target: Canvas > FlyoutPresenter > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ContentPresenter > Grid > Grid > Border > Grid > Border
-    styles:
       - Visibility=0
+      - Margin=0,0,0,0
+      - Padding=0,0,0,0
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
+      - CornerRadius=$CR4
+  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid
+    styles:
       - Opacity=1
-      - Background:=$BackgroundFluentMedia
+      - Visibility=0
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
+      - Padding=-34,0,-12,0
+  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel
+    styles:
+      - Opacity=1
+      - Visibility=0
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
+  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel#BatteryStackPanel > TextBlock#BatteryTextBlock
+    styles:
+      - Opacity=1
+      - FontFamily=sf pro
+      - FontWeight=bold
+      - RenderTransform:=<TransformGroup><TranslateTransform X="-12" Y="-12" /><ScaleTransform ScaleX="1.1" ScaleY="1.1" /></TransformGroup>
+  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel#BatteryStackPanel > Grid#BatteryGlyphGrid > TextBlock
+    styles:
+      - Opacity=1
+      - RenderTransform:=<TransformGroup><TranslateTransform X="5.6" Y="4" /><ScaleTransform ScaleX="1.7" ScaleY="1.7" /></TransformGroup>
   - target: Canvas > FlyoutPresenter > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ContentPresenter > Grid > Grid > Border
     styles:
       - Visibility=0
@@ -124,7 +67,7 @@ controlStyles:
     styles:
       - Visibility=0
       - Opacity=1
-      - RenderTransform:=<TranslateTransform X="0" Y="6"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="9"/>
       - MinHeight=5.5
   - target: SystemTray.OmniButton > Grid@CommonStates
     styles:
@@ -141,7 +84,7 @@ controlStyles:
       - Background@CheckedPressed:=<WindhawkBlur BlurAmount="5" TintColor="#2fffffff" />
       - Opacity@CheckedPointerOver=1
       - Margin=2,2,2,3
-  - target: Taskbar.TaskListButtonPanel@CommonStates > Border#BackgroundElement
+  - target: Taskbar.TaskListButtonPanel@CommonStates > Grid > Border#BackgroundElement
     styles:
       - Opacity=0.11
       - CornerRadius=10
@@ -159,9 +102,8 @@ controlStyles:
       - Opacity@ActiveNormal:=1
       - Opacity@InactiveNormal:=0
       - Opacity@InactivePressed:=0
-  - target: Taskbar.TaskListLabeledButtonPanel@CommonStates > Border#BackgroundElement
+  - target: Grid#IconPanel@CommonStates > Border#BackgroundElement
     styles:
-      - Opacity=0.3
       - CornerRadius=11
       - Background:=<WindhawkBlur BlurAmount="60" TintColor="#35ffffff" />
       - Background@InactivePointerOver:=<WindhawkBlur BlurAmount="60" TintColor="#41ffffff" />
@@ -177,10 +119,22 @@ controlStyles:
       - Opacity@ActiveNormal:=1
       - Opacity@InactiveNormal:=0
       - Opacity@InactivePressed:=0
-  - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon
+      - Background@MultiWindowActive:=<WindhawkBlur BlurAmount="60" TintColor="#20ffffff" />
+      - Background@MultiWindowPointerOver:=<WindhawkBlur BlurAmount="10" TintColor="#ffffffff" TintOpacity="0.5" />
+      - Background@MultiWindowPressed:=<WindhawkBlur BlurAmount="10" TintColor="#ffffffff" TintOpacity="0.1" />
+      - Background@MultiWindowNormal:=<WindhawkBlur BlurAmount="10" TintColor="#ffffffff" TintOpacity="0.1" />
+      - Opacity@MultiWindowActive=1
+      - Opacity@MultiWindowPointerOver=0.2
+      - Opacity@MultiWindowPressed=0.6
+      - Opacity@MultiWindowNormal=0.1
+  - target: Windows.UI.Xaml.Controls.Border#MultiWindowElement
     styles:
-      - Opacity=1
-  - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel@CommonStates > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon
+      - BorderThickness=6
+      - BorderBrush=white
+      - Opacity=0.2
+      - Visibility=Visible
+      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
+  - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel@CommonStates > Grid > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon
     styles:
       - Visibility@InactiveNormal=0
       - Visibility@InactivePointerOver=0
@@ -213,6 +167,7 @@ controlStyles:
       - Width@ActiveNormal=37
       - Width@ActivePointerOver=37
       - Width@ActivePressed=35
+      - Opacity=1
   - target: Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid
     styles:
       - Margin=$GridMargin
@@ -229,18 +184,11 @@ controlStyles:
   - target: Rectangle#BackgroundStroke
     styles:
       - Visibility=1
-  - target: Grid#ConfirmatorMainGrid
-    styles:
-      - Background:=$Background1
-      - BorderThickness=3,3,3,3
-      - BorderBrush:=$BorderBrush
-      - CornerRadius=$CornerRadius
-      - CornerRadius=11
   - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel
     styles:
       - Visibility=0
-      - RenderTransform:=<TranslateTransform X="-4.8" Y="0"/>
-  - target: Taskbar.TaskListLabeledButtonPanel@RunningIndicatorStates > Rectangle#RunningIndicator
+      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
+  - target: Grid#IconPanel@RunningIndicatorStates > Rectangle#RunningIndicator, Taskbar.TaskListLabeledButtonPanel@RunningIndicatorStates > Rectangle#RunningIndicator
     styles:
       - Visibility=0
       - RenderTransform:=<TranslateTransform X="0" Y="8.7"/>
@@ -255,15 +203,9 @@ controlStyles:
       - Opacity=0
       - RenderTransform:=<TranslateTransform X="-0.4" Y="0"/>
       - Margin=-10
-  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel, Windows.UI.Xaml.Controls.TextBlock#BadgeText
     styles:
       - Opacity=1
-  - target: Image#OverlayIcon
-    styles:
-      - RenderTransform:=<TranslateTransform X="-5" Y="0"/>
-      - Margin=0,0,0,0
-      - Canvas.ZIndex=1
-      - Opacity=0.8
   - target: Taskbar.Badge#BadgeControl
     styles:
       - RenderTransform:=<TranslateTransform X="-3" Y="-3"/>
@@ -272,40 +214,19 @@ controlStyles:
     styles:
       - RenderTransform:=<TranslateTransform X="-0.5" Y="0"/>
       - Fill:=<WindhawkBlur BlurAmount="5" TintColor="#FF3131" TintOpacity="0.5" />
-  - target: Windows.UI.Xaml.Controls.TextBlock#BadgeText
-    styles:
-      - Opacity=1
   - target: Windows.UI.Xaml.Controls.Image#OverlayIcon
     styles:
       - Opacity=1
       - RenderTransform:=<TranslateTransform X="-3" Y="-4"/>
-  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement
+      - Margin=0,0,0,0
+      - Canvas.ZIndex=1
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement, Taskbar.ExperienceToggleButton, Taskbar.TaskListButton, SearchUx.SearchUI.SearchButtonRootGrid#SearchBoxButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement, Windows.UI.Xaml.Controls.Border#SearchPillBackgroundElement, Windows.UI.Xaml.Controls.Button#VirtualDesktopElementCloseButton, Windows.UI.Xaml.Controls.MenuFlyoutItem, Windows.UI.Xaml.Controls.MenuFlyoutSubItem
     styles:
       - CornerRadius=$CR
-  - target: Taskbar.ExperienceToggleButton
-    styles:
-      - CornerRadius=$CR
-  - target: Taskbar.TaskListButton
-    styles:
-      - CornerRadius=$CR
-  - target: SearchUx.SearchUI.SearchButtonRootGrid#SearchBoxButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement
-    styles:
-      - CornerRadius=$CR
-  - target: Windows.UI.Xaml.Controls.Border#SearchPillBackgroundElement
-    styles:
-      - CornerRadius=$CR
-  - target: Windows.UI.Xaml.Controls.Border#MultiWindowElement
-    styles:
-      - CornerRadius=$CR
-      - Margin=0,1,0,1
   - target: SystemTray.SystemTrayFrame
     styles:
       - RenderTransform:=<TranslateTransform X="2.5" />
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > Grid#SystemTrayFrameGrid > SystemTray.NotificationAreaIcons#NotificationAreaIcons > ItemsPresenter > StackPanel
-    styles:
-      - CornerRadius=$CR4
-      - Margin=0,0,1,0
-  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > Grid#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton
+  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton
     styles:
       - CornerRadius=$CR4
       - Margin=0,0,-10,0
@@ -317,24 +238,16 @@ controlStyles:
     styles:
       - CornerRadius=4
       - Margin=2,0,2,0
-  - target: SystemTray.IconView#SystemTrayIcon > Windows.UI.Xaml.Controls.Grid#ContainerGrid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+  - target: SystemTray.IconView#SystemTrayIcon > Windows.UI.Xaml.Controls.Grid#ContainerGrid > Windows.UI.Xaml.Controls.Border#BackgroundBorder, SystemTray.OmniButton#ControlCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder, SystemTray.OmniButton#NotificationCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
     styles:
       - CornerRadius=$CR4
       - Margin=-2,-2,-2,-3
-  - target: SystemTray.OmniButton#ControlCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
-    styles:
-      - CornerRadius=$CR4
-      - Margin=-2,-2,-2,-3
-  - target: SystemTray.OmniButton#NotificationCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
-    styles:
-      - CornerRadius=$CR4
-      - Margin=-2,-2,-2,-3
-  - target: Grid#SystemTrayFrameGrid
+  - target: StackPanel#SystemTrayFrameGrid
     styles:
       - Margin=0
       - RenderTransform:=<TranslateTransform X="0" Y="0"/>
       - Padding=10,0,0,0
-      - Background:=$SysBG
+      - Background:=transparent
       - CornerRadius=15,0,0,10
       - BorderThickness=2,2,0,0
       - BorderBrush:=$BorderBrush
@@ -376,16 +289,12 @@ controlStyles:
       - Margin=-1,-1,-1,-1
   - target: Windows.UI.Xaml.Controls.Grid#ModalRootGrid > Windows.UI.Xaml.Controls.Border#BackgroundElement
     styles:
-      - Background:=$Background1
-      - CornerRadius=$CR
-      - BorderThickness=$BT
-      - BorderBrush:=$BorderBrush
-      - Shadow:=
-  - target: Windows.UI.Xaml.Controls.Grid#ModalRootGrid > Windows.UI.Xaml.Controls.Border#BackgroundElement
-    styles:
       - Background:=<WindhawkBlur BlurAmount="11" TintColor="#0C000000"/>
       - 'Transitions:=<TransitionCollection> <ContentThemeTransition VerticalOffset="0" /> </TransitionCollection> '
       - CornerRadius=15
+      - BorderThickness=$BT
+      - BorderBrush:=$BorderBrush
+      - Shadow:=
   - target: Windows.UI.Xaml.Controls.Border#BackgroundDimmingLayer
     styles:
       - Background:=<WindhawkBlur BlurAmount="0" TintColor="#00000000" />
@@ -404,9 +313,6 @@ controlStyles:
       - CornerRadius=$CR3
       - BorderThickness=$BT
       - BorderBrush:=$BorderBrush
-  - target: Windows.UI.Xaml.Controls.Button#VirtualDesktopElementCloseButton
-    styles:
-      - CornerRadius=$CR
   - target: Windows.UI.Xaml.Controls.Button#CloseButton
     styles:
       - CornerRadius=$CR3
@@ -442,12 +348,6 @@ controlStyles:
       - Padding=3,4,3,4
       - BorderBrush:=$BorderBrush
       - Margin=13.5,0,0,0
-  - target: Windows.UI.Xaml.Controls.MenuFlyoutItem
-    styles:
-      - CornerRadius=$CR
-  - target: Windows.UI.Xaml.Controls.MenuFlyoutSubItem
-    styles:
-      - CornerRadius=$CR
   - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
     styles:
       - Background:=$Background2
@@ -458,67 +358,70 @@ controlStyles:
   - target: ScrollViewer#MenuFlyoutPresenterScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter
     styles:
       - ChildrenTransitions:=$AnimationSettings
-  - target: Grid#LayoutRoot
-    styles:
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
-  - target: Border#BackgroundBorder
+  - target: Grid#LayoutRoot, Border#BackgroundBorder
     styles:
       - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
   - target: Microsoft.UI.Xaml.Controls.ItemsRepeater#TaskbarFrameRepeater
     styles:
       - Margin=0,1,0,0
+  - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#NotificationCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid
+    styles:
+      - Padding=-2,0,-2,0
   - target: TextBlock#TimeInnerTextBlock
     styles:
       - FontSize=14
       - Opacity=1
       - FontWeight=bold
       - FontFamily=sf pro
-      - RenderTransform:=<TranslateTransform X="0" Y="-2"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="-3"/>
   - target: TextBlock#DateInnerTextBlock
     styles:
       - FontSize=14
       - Opacity=1
       - FontWeight=bold
       - FontFamily=sf pro
-      - RenderTransform:=<TranslateTransform X="0" Y="2"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="4"/>
+  - target: Grid#ContainerGrid
+    styles:
+      - CornerRadius=0,0,0,0
   - target: Rectangle#ShowDesktopPipe@CommonStates
     styles:
-      - RenderTransform:=<TranslateTransform X="0.5" Y="0"/>
-      - Width=14
-      - Margin=0
-      - Height=50
+      - Canvas.ZIndex=-1
+      - Width=9
+      - Height=Auto
+      - Margin=0,-2,0,0
+      - Grid.Row=0
+      - Grid.RowSpan=3
+      - Grid.Column=0
+      - Grid.ColumnSpan=3
       - Stroke:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.1"/>
-      - StrokeThickness=20
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: F0DC299D809B9700] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
+      - Fill@Active:=<AcrylicBrush TintColor="{ThemeResource SystemBaseLowColor}" TintOpacity="1" Opacity="0.1"/>
+  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: F0DC299D809B9700] > Grid#IconPanel > Image#Icon'
     styles:
       - Visibility=Visible
       - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Downloads\ico\ZenJune.png" />
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: Brave.H2XZVDA73RF6GCNIS3WVYBUJ3M] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
+  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: Brave.H2XZVDA73RF6GCNIS3WVYBUJ3M] > Grid#IconPanel > Image#Icon'
     styles:
       - Visibility=Visible
       - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Pictures\Icons\WindHawk's\brave red 1b.png" />
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: Microsoft.Windows.Explorer] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
+  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: Microsoft.Windows.Explorer] > Grid#IconPanel > Image#Icon'
     styles:
       - Visibility=Visible
       - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Pictures\Icons\Explorer\explorerFluentSep1z.png" />
       - RenderTransform:=<TranslateTransform X="0" Y="0"/>
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: C:\Users\LENOVO\AppData\Roaming\Spotify\Spotify.exe] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
+  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: C:\Users\LENOVO\AppData\Roaming\Spotify\Spotify.exe] > Grid#IconPanel > Image#Icon'
     styles:
       - Visibility=Visible
       - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Pictures\Icons\WindHawk's\Spotify Bevel b.png" />
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: 5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
+  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: 5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App] > Grid#IconPanel > Image#Icon'
     styles:
       - Visibility=Visible
       - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Pictures\Icons\WindHawk's\Whatsapp bevel c.png" />
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: com.squirrel.Discord.Discord] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
+  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: com.squirrel.Discord.Discord] > Grid#IconPanel > Image#Icon, taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: discord.com-EA2E0C84_gfnmj1zmvxvrt!App] > Grid#IconPanel > Image#Icon'
     styles:
       - Visibility=Visible
       - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Pictures\Icons\for WindHawk use\discord 1b.png" />
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: discord.com-EA2E0C84_gfnmj1zmvxvrt!App] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
-    styles:
-      - Visibility=Visible
-      - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Pictures\Icons\for WindHawk use\discord 1b.png" />
-  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: Microsoft.WindowsNotepad_8wekyb3d8bbwe!App] > taskbar:TaskListLabeledButtonPanel#IconPanel > Image#Icon'
+  - target: 'taskbar:TaskListButton[AutomationProperties.AutomationId=Appid: Microsoft.WindowsNotepad_8wekyb3d8bbwe!App] > Grid#IconPanel > Image#Icon'
     styles:
       - Visibility=Visible
       - Source:=<BitmapImage UriSource="C:\Users\LENOVO\Downloads\ico\NotepadJune1d.png" />
@@ -529,15 +432,15 @@ controlStyles:
       - Width=18
   - target: SystemTray.NotifyIconView#NotifyItemIcon[AutomationProperties.Name=Bluetooth Devices] > Grid#ContainerGrid > ContentPresenter#ContentPresenter > Grid#ContentGrid > SystemTray.ImageIconContent > Grid#ContainerGrid > Image
     styles:
-      - Source=C:\Users\LENOVO\Pictures\Icons\Bluetooth 1.png
+      - Source=C:\Users\LENOVO\Pictures\Icons\WindHawk's\Bluetooth 1b.png
       - Height=18
       - Width=18
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem > Grid#LayoutRoot > TextBlock#TextBlock
+  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem > Grid#LayoutRoot > TextBlock#TextBlock, MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > TextBlock#TextBlock
     styles:
       - Grid.Column=0
       - Grid.ColumnSpan=1
       - Margin=26,0,0,0
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem > Grid#LayoutRoot > Viewbox#IconRoot
+  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem > Grid#LayoutRoot > Viewbox#IconRoot, MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > Viewbox#IconRoot
     styles:
       - Visibility=0
       - Grid.Column=0
@@ -549,93 +452,11 @@ controlStyles:
       - FontFamily=Segoe Fluent Icons
       - FontSize=16
       - FontWeight=Normal
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > TextBlock#TextBlock
-    styles:
-      - Grid.Column=0
-      - Grid.ColumnSpan=1
-      - Margin=26,0,0,0
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > Viewbox#IconRoot
-    styles:
-      - Visibility=0
-      - Grid.Column=0
-      - Grid.ColumnSpan=1
-      - Margin=0,0,0,0
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > Viewbox#IconRoot > Border > ContentPresenter#IconContent
+  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > Viewbox#IconRoot > Border > ContentPresenter#IconContent, MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > FontIcon#SubItemChevron
     styles:
       - FontFamily=Segoe Fluent Icons
       - FontSize=16
       - FontWeight=Normal
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > FontIcon#SubItemChevron
-    styles:
-      - FontFamily=Segoe Fluent Icons
-      - FontSize=16
-      - FontWeight=Normal
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem[Text=Shut down or sign out] > Grid#LayoutRoot > Grid > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Installed apps] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Mobility Center] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Power Options] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Event Viewer] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=System] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Device Manager] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Network Connections] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Disk Management] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Computer Management] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Terminal] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Terminal (Admin)] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Task Manager] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Settings] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=File Explorer] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Search] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Run] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Desktop] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Sign out] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Sleep] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Shut down] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
-  - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem[Text=Restart] > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
-    styles:
-      - Content=
 themeResourceVariables:
   - ''
 clickThroughTaskbar: 0
