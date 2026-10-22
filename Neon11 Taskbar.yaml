@@ -49,7 +49,7 @@ controlStyles:
   - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel#BatteryStackPanel > TextBlock#BatteryTextBlock
     styles:
       - Opacity=1
-      - FontFamily=sf pro
+      - FontFamily:=sf pro
       - FontWeight=bold
       - RenderTransform:=<TransformGroup><TranslateTransform X="-12" Y="-12" /><ScaleTransform ScaleX="1.1" ScaleY="1.1" /></TransformGroup>
   - target: ScrollViewer > ScrollContentPresenter > Border > Grid > SystemTray.SystemTrayFrame > StackPanel#SystemTrayFrameGrid > SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter#ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > Grid#ContentGrid > SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel#BatteryStackPanel > Grid#BatteryGlyphGrid > TextBlock
@@ -364,14 +364,14 @@ controlStyles:
       - FontSize=14
       - Opacity=1
       - FontWeight=bold
-      - FontFamily=sf pro
+      - FontFamily:=sf pro
       - RenderTransform:=<TranslateTransform X="0" Y="-3"/>
   - target: TextBlock#DateInnerTextBlock
     styles:
       - FontSize=14
       - Opacity=1
       - FontWeight=bold
-      - FontFamily=sf pro
+      - FontFamily:=sf pro
       - RenderTransform:=<TranslateTransform X="0" Y="4"/>
   - target: Grid#ContainerGrid
     styles:
@@ -423,12 +423,12 @@ controlStyles:
   - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutItem > Grid#LayoutRoot > Viewbox#IconRoot > Border > ContentPresenter#IconContent
     styles:
       - Visibility=0
-      - FontFamily=Segoe Fluent Icons
+      - FontFamily:=Segoe Fluent Icons
       - FontSize=16
       - FontWeight=Normal
   - target: MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > Viewbox#IconRoot > Border > ContentPresenter#IconContent, MenuFlyoutPresenter > Border > ScrollViewer#MenuFlyoutPresenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > StackPanel > MenuFlyoutSubItem > Grid#LayoutRoot > Grid > FontIcon#SubItemChevron
     styles:
-      - FontFamily=Segoe Fluent Icons
+      - FontFamily:=Segoe Fluent Icons
       - FontSize=16
       - FontWeight=Normal
 themeResourceVariables:
