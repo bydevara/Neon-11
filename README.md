@@ -7,9 +7,9 @@ Full Taskbar version:
 
 to make your taskbar exactly like the image above you better installed:
 1. SF Pro font by Apple at https://developer.apple.com/fonts/
-2. Taskbar Fluent Media Player by Salyts & gr0ud
-(Windhawk mod👇)
-3. Always show all taskbar tray icons by m417z
-4. Taskbar tray icon spacing and grid by m417z
-5. Start button always on the left by m417z
-6. Taskbar height and icon size by m417z
+winhawk mod that you can installed on the Windhawk app 
+2. Taskbar Fluent Media Player https://github.com/Salyts/Taskbar-Fluent-Media-Player
+3. Always show all taskbar tray icons https://windhawk.net/mods/taskbar-notification-icons-show-all
+4. Taskbar tray icon spacing and grid https://windhawk.net/mods/taskbar-notification-icon-spacing
+5. Start button always on the left https://windhawk.net/mods/taskbar-start-button-position
+6. Taskbar height and icon size https://windhawk.net/mods/taskbar-icon-size
